@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+</head>
+<body>
+  <h1>BLOG POST</h1>
+
+  <% @blog_posts.each do |blog_post| %>
+  <div>
+    <h2><%= link_to blog_post.title, blog_post %></h2>
+    <%= blog_post.body %>
+  </div>
+  <% end %>
+
+
+</body>
+</html>
